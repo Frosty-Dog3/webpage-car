@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!--==========Header===========-->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Main Navigation">
+            <a href="#" class="nav_welcome">Welcome to the best online car dealership.</a>
+            <div class="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link border" aria-label="Home">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link border" aria-label="Info">Info</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link border" aria-label="Contact">Contact</a>
+                    </li>
+                    <li class="nav_item">
+                        <label for="more" class="nav_link">Types of cars
+                            <select name="more" id="more" class="car_type">
+                                <option value="">Select one type of car</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="Hatchback">Hatchback</option>
+                                <option value="SUV (Sport Utility Vehicle)">SUV (Sport Utility Vehicle)</option>
+                                <option value="Crossover">Crossover</option>
+                                <option value="Coupe">Coupe</option>
+                                <option value="Convertible">Convertible</option>
+                                <option value="Wagon (or Estate)">Wagon (or Estate)</option>
+                                <option value="Pickup Truck">Pickup Truck</option>
+                                <option value="Minivan">Minivan</option>
+                                <option value="Sports Car">Sports Car</option>
+                                <option value="Electric Vehicle (EV)">Electric Vehicle (EV)</option>
+                            </select>
+                        </label>
+                    </li>
+                    <li class="nav_item">
+                        <label for="search" class="nav_link">Search
+                            <input type="search" id="search" name="search" aria-label="Search" placeholder="eg. Porche">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <!-- Search button -->
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+                <!-- Login button -->
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <!--=======The beginning=======-->
+    <section class="beginning">
+        <h1 class="title">Online|car's|sell</h1>
+        <h1 class="intro">Drive in style.</h1>
+    </section>
+</body>
+</html>

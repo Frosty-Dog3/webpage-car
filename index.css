@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Remove bullets from all unordered lists */
+ul {
+    list-style-type: none;
+}
+
+/* Additionally, you can add this if you want to remove padding and margin from list items */
+ul li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center;
+    background-image: url("audi-rs-e-tron-gt-3840x2160-19437.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    opacity: inherit;
+}
+
+a:hover {
+    text-decoration: wavy;
+    cursor: pointer;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(3, 9, 41, 0.8); /* Use rgba for semi-transparent background */
+    z-index: 100;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    border: 2px solid black;
+    opacity: 0.7;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_welcome {
+    font-size: 2rem;
+    color: white; /* Light text color for better contrast */
+    text-shadow: 1px 1px 2px black; /* Text shadow for better visibility */
+}
+
+.nav_menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+}
+
+.nav_item {
+    margin-left: 2rem;
+}
+
+.nav_link {
+    color: white; /* Light text color for better contrast */
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px black; /* Text shadow for better visibility */
+}
+
+.border:hover {
+    border: 2px solid white; /* Use white border for better contrast */
+    border-radius: 5px;
+}
+
+.beginning {
+    padding: 5px;
+
+}
+
+.title {
+    text-align: center;
+    justify-content: center;
+    padding-top: 3em;
+    margin-top: auto;
+}
+
+.intro {
+    color: black;
+    font-size:15em;
+    text-wrap: wrap;
+}
