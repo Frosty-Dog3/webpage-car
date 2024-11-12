@@ -85,20 +85,3 @@ header {
     border-radius: 5px;
 }
 
-.beginning {
-    padding: 5px;
-
-}
-
-.title {
-    text-align: center;
-    justify-content: center;
-    padding-top: 3em;
-    margin-top: auto;
-}
-
-.intro {
-    color: black;
-    font-size:15em;
-    text-wrap: wrap;
-}
