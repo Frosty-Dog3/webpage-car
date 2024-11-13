@@ -5,62 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/main.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
-    <!--==========Header===========-->
-    <header class="header" id="header">
-        <nav class="nav container" aria-label="Main Navigation">
-            <a href="#" class="nav_welcome">Welcome to the best online car dealership.</a>
-            <div class="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#" class="nav_link border" aria-label="Home">Home</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link border" aria-label="Info">Info</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link border" aria-label="Contact">Contact</a>
-                    </li>
-                    <li class="nav_item">
-                        <label for="more" class="nav_link">Types of cars
-                            <select name="more" id="more" class="car_type">
-                                <option value="">Select one type of car</option>
-                                <option value="sedan">Sedan</option>
-                                <option value="Hatchback">Hatchback</option>
-                                <option value="SUV (Sport Utility Vehicle)">SUV (Sport Utility Vehicle)</option>
-                                <option value="Crossover">Crossover</option>
-                                <option value="Coupe">Coupe</option>
-                                <option value="Convertible">Convertible</option>
-                                <option value="Wagon (or Estate)">Wagon (or Estate)</option>
-                                <option value="Pickup Truck">Pickup Truck</option>
-                                <option value="Minivan">Minivan</option>
-                                <option value="Sports Car">Sports Car</option>
-                                <option value="Electric Vehicle (EV)">Electric Vehicle (EV)</option>
-                            </select>
-                        </label>
-                    </li>
-                    <li class="nav_item">
-                        <label for="search" class="nav_link">Search
-                            <input type="search" id="search" name="search" aria-label="Search" placeholder="eg. Porche">
-                        </label>
-                    </li>
-                </ul>
+    <section class="banner" id="home">
+        <div class="navbar">
+            <img src="img/logo.png" alt="Company Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li> 
+                <li><a href="#">Services</a></li> 
+                <li><a href="#">Special Offers</a></li> 
+                <li><a href="#">Financing</a></li> 
+                <li><a href="#contact-us">Contact Us</a></li> 
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to search">
+                <button class="btn" onclick="searchFunction()">Search</button>
             </div>
-            <div class="nav__actions">
-                <!-- Search button -->
-                <i class="ri-search-line nav__search" id="search-btn"></i>
-                <!-- Login button -->
-                <i class="ri-user-line nav__login" id="login-btn"></i>
-                <!-- Toggle button -->
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+            
+           <div class="mode">
+                <button id="toggle-dark-mode" class="fas fa-sun mode-bar" aria-label="Toggle Dark Mode" onclick="toggleDarkMode()" onkeypress="handleKeyPress(event)"></button>
+            </div>
+
+            
+            
+        </div>
+    </section>
+    
+    <section class="home">
+        <div class="content">
+            <h1 class="title"><strong>Online</strong>|<strong>Car's</strong>|<strong>Sell</strong></h1> 
+            <h1>Welcome to our online car selling.</h1>
+            <p class="home-info">Looking to sell your car quickly and hassle-free? Our website offers a streamlined platform for you to connect with potential buyers effortlessly.<br> Just list your car with all the necessary details and reach a wide audience of interested buyers.<br> Whether you're upgrading to a new vehicle or simply need to sell, we make the process smooth, efficient, and rewarding.<br> Join our community of satisfied sellers and get the best value for your car today! 🚗✨</p>
+            <div>
+                <button type="button"><span></span>Watch more</button>
+                <button type="button"><span></span>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="highlights-cards">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h4>01</h4>
+                    <h5>Comprehensive Car Inspections</h5>
+                    <p class="card-info">Our detailed car inspections ensure your vehicle is in top-notch condition before you make a purchase. Our experts meticulously check every aspect of the car, from the engine to the interior, to provide you with a comprehensive report. Trust us to make your car-buying experience safe and sound.</p>
+                    <div>
+                        <button type="button" class="read-button"><a href="readmore-01.html" class="read-button"><span></span>Read more</a></button>
+                    </div>
+
                 </div>
             </div>
-        </nav>
-    </header>
-    <hr> 
+
+            <div class="card">
+                <div class="card-content">
+                    <h4>02</h4>
+                    <h5>Expert Financing Options</h5>
+                    <p class="card-info">We offer a variety of financing options to suit your budget and needs. Whether you're looking for a low-interest loan or flexible payment plans, our finance experts are here to help you every step of the way. Drive away in your dream car with our hassle-free financing solutions.</p>
+                    <div>
+                        <button type="button" class="read-button"><a href="readmore-02.html" class="read-button"><span></span>Read more</a></button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h4>03</h4>
+                    <h5>Premium Customer Support</h5>
+                    <p class="card-info">Our dedicated customer support team is here to assist you with any questions or concerns you may have. From pre-purchase inquiries to post-sale support, we're committed to providing exceptional service and ensuring your complete satisfaction. Experience the difference with our premium customer support.</p>
+                    <div>
+                        <button type="button" class="read-button"><a href="readmore-03.html" class="read-button"><span></span>Read more</a></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="about-us-info">Welcome to <strong>Online|Car's|Sell</strong>, the leading destination for all your automotive needs. Established in <strong>2024</strong>, we have been committed to providing our customers with the highest level of service, reliability, and trust. Our journey began with a simple mission: to make car buying and selling a hassle-free and enjoyable experience.</p>
+            
+            <h3>Our Mission</h3>
+            <p>At <strong>Online|Car's|Sell</strong>, we strive to deliver an exceptional automotive experience by offering a wide range of new and used cars, transparent pricing, and unbeatable customer service. We believe in making your dream of owning a car a reality.</p>
+            
+            <h3>Why Choose Us</h3>
+            <ul>
+                <li><strong>Wide Selection</strong>: Whether you are looking for a brand-new model or a reliable pre-owned vehicle, our extensive inventory has something for everyone.</li>
+                <li><strong>Expertise & Experience</strong>: With decades of combined experience, our team of professionals is dedicated to helping you find the perfect vehicle that suits your needs and budget.</li>
+                <li><strong>Customer-Centric Approach</strong>: Our customers are at the heart of everything we do. We listen, understand, and deliver personalized services tailored to your unique requirements.</li>
+                <li><strong>Transparent Pricing</strong>: Honesty and transparency are our core values. We provide clear, upfront pricing with no hidden fees, ensuring you get the best deal possible.</li>
+                <li><strong>Comprehensive Services</strong>: Beyond selling cars, we offer a range of services, including financing options, maintenance, repairs, and trade-ins, making us your one-stop automotive shop.</li>
+            </ul>
+            
+            <h3>Meet Our Team</h3>
+            <p>Our dedicated team is here to guide you every step of the way. From our knowledgeable sales associates to our skilled technicians, we are committed to exceeding your expectations and ensuring your satisfaction.</p>
+            
+            <p>Thank you for choosing <strong>Online|Car's|Sell</strong>. We look forward to serving you and helping you drive home in your dream car.</p>
+        </div>
+    </section>
+
+    <hr>
+    
+    <section class="contact-us" id="contact-us">
+        
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
