@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-title">
+                <span>Sign Up</span>
+            </div>
+            <form method="post" action="your-action-url">
+                <div class="input-row">
+                    <div class="input-wrapper half-width">
+                        <input type="text" id="first-name" class="input-field" required>
+                        <label for="first-name" class="label">First Name</label>
+                    </div>
+                    <div class="input-wrapper half-width">
+                        <input type="text" id="last-name" class="input-field" required>
+                        <label for="last-name" class="label">Last Name</label>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-wrapper half-width">
+                        <input type="email" id="email" class="input-field" required>
+                        <label for="email" class="label">Email Address</label>
+                    </div>
+                    <div class="input-wrapper half-width">
+                        <input type="text" id="username" class="input-field" required>
+                        <label for="username" class="label">Username</label>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-wrapper half-width">
+                        <input type="password" id="password" class="input-field" required>
+                        <label for="password" class="label">Password</label>
+                        <i class="fa-solid fa-lock icon"></i>
+                    </div>
+                    <div class="input-wrapper half-width">
+                        <input type="password" id="confirm-password" class="input-field" required>
+                        <label for="confirm-password" class="label">Confirm Password</label>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-wrapper full-width">
+                        <input type="checkbox" id="terms-and-conditions" required>
+                        <label for="terms-and-conditions">I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+                    </div>
+                    <div class="input-wrapper full-width">
+                        <input type="checkbox" id="subscribe-newsletter">
+                        <label for="subscribe-newsletter">Subscribe to newsletter</label>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="submit" class="input-submit" value="Sign Up">
+                </div>
+                <div class="signup">
+                    <span>Already have an account? <a href="login.html">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

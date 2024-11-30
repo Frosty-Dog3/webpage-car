@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --second-color: #b9b9b9;
+    --primary-color: #b5afaf;
+    --black-color: #020101;
+}
+
+body {
+    background-position: center;
+    background-image: url('img/ai-generated-8534612.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: var(--black-color);
+    z-index: 100;
+    padding: 1rem 0;
+    opacity: 20%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    font-size: 2rem;
+    color: var(--second-color);
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    margin-left: 2rem;
+}
+
+.nav__link {
+    color: var(--second-color);
+    font-size: 1rem;
+}
+
+.nav__actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav__search,
+.nav__login,
+.nav__toggle {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: var(--second-color);
+}
+
+.search {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__form {
+    display: flex;
+    align-items: center;
+}
+
+.search__icon {
+    font-size: 2rem;
+    color: var(--second-color);
+    margin-right: 0.5rem;
+}
+
+.search__input {
+    width: 300px;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.search__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    text-align: center;
+    background-size: cover;
+   
+}
+
+.intro-content {
+    max-width: 800px;
+    width: 100%;
+    padding: 1rem;
+}
+
+.head {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    opacity: 50%;
+    color: blanchedalmond;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sellMyRide {
+    font-size: 2rem;
+    color: black;
+}

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+/* navbar css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(51, 51, 51, 0.8); /* Translucent background */
+    backdrop-filter: blur(5px); 
+}
+
+.logo-icon {
+    height: 50px;
+}
+
+
+.menu-icon {
+    display: none; /* Hide the menu icon initially */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    /* transition: background-color 0.3s; */
+    transition: 0.3s ease;
+}
+
+.navbar ul li a::before {
+    content: '';
+    height: 16px;
+    width: 3px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    background-color: #ff014f;
+    transition: 0.5s ease;
+    opacity: 0;
+
+}
+
+.navbar ul li a:hover::before {
+    opacity: 1;
+}
+
+
+
+.navbar ul li a:hover {
+    transform: translateX(-8px);
+    color: #ff014f;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.srch:focus {
+    border-color: #aaa;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #777;
+}
+
+.mode {
+    margin-left: 20px;
+}
+
+.mode-bar {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Media Queries for Responsiveness */
+/* navbar responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide menu initially */
+    }
+
+    .navbar ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    .search {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .srch {
+        width: 80%;
+        flex-grow: 1;
+    }
+
+    .btn {
+        width: 20%;
+    }
+}

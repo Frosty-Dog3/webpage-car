@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online|car's|Sell</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="img/main.jpg" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
+    
     <section class="banner" id="home">
         <div class="navbar">
-            <img src="img/logo.png" alt="Company Logo" class="logo">
-            <ul>
+            <a href="#home"><img src="img/logo.png" alt="Company Logo" class="logo logo-icon"></a>
+            <div class="menu-icon" onclick="toggleMenu()"> ☰
+            </div>
+            <ul id="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li> 
                 <li><a href="#">Services</a></li> 
@@ -21,98 +23,129 @@
                 <li><a href="#">Financing</a></li> 
                 <li><a href="#contact-us">Contact Us</a></li> 
                 <li><a href="#">FAQs</a></li>
+                <li><a href="login.html">Log in</a></li>
             </ul>
             <div class="search">
                 <input class="srch" type="search" name="" placeholder="Type to search">
                 <button class="btn" onclick="searchFunction()">Search</button>
             </div>
-            
-           <div class="mode">
-                <button id="toggle-dark-mode" class="fas fa-sun mode-bar" aria-label="Toggle Dark Mode" onclick="toggleDarkMode()" onkeypress="handleKeyPress(event)"></button>
-            </div>
-
-            
-            
+        
         </div>
     </section>
-    
-    <section class="home">
+
+    <section class="home" id="home">
         <div class="content">
             <h1 class="title"><strong>Online</strong>|<strong>Car's</strong>|<strong>Sell</strong></h1> 
             <h1>Welcome to our online car selling.</h1>
             <p class="home-info">Looking to sell your car quickly and hassle-free? Our website offers a streamlined platform for you to connect with potential buyers effortlessly.<br> Just list your car with all the necessary details and reach a wide audience of interested buyers.<br> Whether you're upgrading to a new vehicle or simply need to sell, we make the process smooth, efficient, and rewarding.<br> Join our community of satisfied sellers and get the best value for your car today! 🚗✨</p>
             <div>
-                <button type="button"><span></span>Watch more</button>
-                <button type="button"><span></span>Subscribe</button>
+                <button type="button" class="btn-span"><span class="sp-btn"></span><a href="buy-with-us.html" class="sp-link">Buy with us</a></button>
+                <button type="button" class="btn-span"><span class="sp-btn"></span><a href="sell-with-us.html" class="sp-link">Sell with us</a></button>
             </div>
         </div>
     </section>
 
+ <section class="card-container">
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                    <h1 class="card-text">01</h1>
+                <h2>Comprehensive Car Inspections</h2>
+                <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quos iure enim consectetur natus veniam nihil voluptatem? Nihil impedit illo consequuntur nobis architecto doloribus ea alias, suscipit quibusdam itaque? Veritatis!</p>
+                <a href="readmore-01.html" class="a-btn"><span class="btn-read-more btn-span sp-btn">Read more</span></a>
+            </div>
+        </div>
     
-
-    <section class="highlights-cards">
-        <div class="card-container">
-            <div class="card">
-                <div class="card-content">
-                    <h4>01</h4>
-                    <h5>Comprehensive Car Inspections</h5>
-                    <p class="card-info">Our detailed car inspections ensure your vehicle is in top-notch condition before you make a purchase. Our experts meticulously check every aspect of the car, from the engine to the interior, to provide you with a comprehensive report. Trust us to make your car-buying experience safe and sound.</p>
-                    <div>
-                        <button type="button" class="read-button"><a href="readmore-01.html" class="read-button"><span></span>Read more</a></button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <h4>02</h4>
-                    <h5>Expert Financing Options</h5>
-                    <p class="card-info">We offer a variety of financing options to suit your budget and needs. Whether you're looking for a low-interest loan or flexible payment plans, our finance experts are here to help you every step of the way. Drive away in your dream car with our hassle-free financing solutions.</p>
-                    <div>
-                        <button type="button" class="read-button"><a href="readmore-02.html" class="read-button"><span></span>Read more</a></button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-content">
-                    <h4>03</h4>
-                    <h5>Premium Customer Support</h5>
-                    <p class="card-info">Our dedicated customer support team is here to assist you with any questions or concerns you may have. From pre-purchase inquiries to post-sale support, we're committed to providing exceptional service and ensuring your complete satisfaction. Experience the difference with our premium customer support.</p>
-                    <div>
-                        <button type="button" class="read-button"><a href="readmore-03.html" class="read-button"><span></span>Read more</a></button>
-                    </div>
-
-                </div>
+        <div class="card">
+            <div class="card-content">
+                    <h1 class="card-text">02</h1>
+                <h2>Expert Financing Options</h2>
+                <p class="card-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, accusamus! Rerum ullam id ipsam molestiae, deleniti modi iste odio accusamus nostrum suscipit perferendis officiis laudantium neque illo reiciendis rem sint.</p>
+                <a href="readmore-02.html" class="a-btn"><span class="btn-read-more btn-span sp-btn">Read more</span></a>
             </div>
         </div>
-    </section>
-
-    <section id="about-us">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <p class="about-us-info">Welcome to <strong>Online|Car's|Sell</strong>, the leading destination for all your automotive needs. Established in <strong>2024</strong>, we have been committed to providing our customers with the highest level of service, reliability, and trust. Our journey began with a simple mission: to make car buying and selling a hassle-free and enjoyable experience.</p>
-            
-            <h3>Our Mission</h3>
-            <p>At <strong>Online|Car's|Sell</strong>, we strive to deliver an exceptional automotive experience by offering a wide range of new and used cars, transparent pricing, and unbeatable customer service. We believe in making your dream of owning a car a reality.</p>
-            
-            <h3>Why Choose Us</h3>
-            <ul>
-                <li><strong>Wide Selection</strong>: Whether you are looking for a brand-new model or a reliable pre-owned vehicle, our extensive inventory has something for everyone.</li>
-                <li><strong>Expertise & Experience</strong>: With decades of combined experience, our team of professionals is dedicated to helping you find the perfect vehicle that suits your needs and budget.</li>
-                <li><strong>Customer-Centric Approach</strong>: Our customers are at the heart of everything we do. We listen, understand, and deliver personalized services tailored to your unique requirements.</li>
-                <li><strong>Transparent Pricing</strong>: Honesty and transparency are our core values. We provide clear, upfront pricing with no hidden fees, ensuring you get the best deal possible.</li>
-                <li><strong>Comprehensive Services</strong>: Beyond selling cars, we offer a range of services, including financing options, maintenance, repairs, and trade-ins, making us your one-stop automotive shop.</li>
-            </ul>
-            
-            <h3>Meet Our Team</h3>
-            <p>Our dedicated team is here to guide you every step of the way. From our knowledgeable sales associates to our skilled technicians, we are committed to exceeding your expectations and ensuring your satisfaction.</p>
-            
-            <p>Thank you for choosing <strong>Online|Car's|Sell</strong>. We look forward to serving you and helping you drive home in your dream car.</p>
+    
+        <div class="card">
+            <div class="card-content">
+                    <h1 class="card-text">03</h1>
+                <h2>Customer Support</h2>
+                <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tempore, quam magnam quae laborum reiciendis fuga repellendus unde similique, quod, beatae repellat nam voluptatibus vitae quidem animi. Amet, sunt eligendi.</p>
+                <a href="readmore-03.html" class="a-btn"><span class="btn-read-more btn-span sp-btn">Read more</span></a>
+            </div>
         </div>
-    </section>
+    </div>
+ </section>
+
+ 
+
+    <footer id="contact-us">
+        <div class="footer-container">
+            <div class="row">
+                  <div class="col" id="company">
+                      <img src="images/logo.png" alt="" class="logos">
+                      <p>
+                        We provide top-notch car services to ensure your vehicle stays in peak condition.
+                        Experience our quality service today.
+                      </p>
+                      <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                      </div>
+                  </div>
+
+                  <div class="col" id="services">
+                     <h3>Services</h3>
+                     <div class="links">
+                        <a href="#">Oil Change</a>
+                        <a href="#">Brake Services</a>
+                        <a href="#">Tire Services</a>
+                        <a href="#">Battery Replacement</a>
+                     </div>
+                  </div>
+
+                  <div class="col" id="useful-links">
+                     <h3>Quick Links</h3>
+                     <div class="links">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact Us</a>
+                     </div>
+                  </div>
+
+                  <div class="col" id="contact">
+                      <h3>Contact</h3>
+                      <div class="contact-details">
+                         <i class="fa fa-location"></i>
+                         <p>123 Car St, Auto City, <br> NY, USA</p>
+                      </div>
+                      <div class="contact-details">
+                         <i class="fa fa-phone"></i>
+                         <p>+1-234-567-890</p>
+                      </div>
+                      <div class="contact-details">
+                         <i class="fa fa-envelope"></i>
+                         <p>contact@carservices.com</p>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="row">
+                  <div class="form">
+                    <form action="">
+                        <input type="email" placeholder="Enter your email for updates...">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                  </div>
+            </div>
+
+        </div>
+     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

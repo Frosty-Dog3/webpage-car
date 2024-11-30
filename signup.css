@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --second-color: #b9b9b9;
+    --primary-color: #b5afaf;
+    --black-color: #020101;
+}
+
+body {
+    background-position: center;
+    background-image: url('img/ai-generated-8534612.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login-container {
+    position: relative;
+    width: 450px;
+    border: 2px solid var(--primary-color);
+    padding: 7.5rem 2.5rem 4rem 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    color: var(--second-color);
+    background: rgba(181, 175, 175, 0.8);
+}
+
+.login-title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: flex;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 20px 20px;
+    height: 70px;
+}
+
+.login-title span {
+    color: var(--black-color);
+    font-size: 30px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-wrapper.half-width {
+    width: 48%;
+}
+
+.input-wrapper.full-width {
+    width: 100%;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.label {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 14px;
+    color: var(--second-color);
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--second-color);
+}
+
+.input-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-submit:hover {
+    background-color: var(--second-color);
+}
+
+.signup {
+    text-align: center;
+    margin-top: 20px;
+}
