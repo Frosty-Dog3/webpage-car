@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header class="profile-header">
+            <div class="profile-photo">
+                <img src="profile-photo.jpg" alt="Profile Photo" id="profileImage">
+                <input type="file" id="uploadPhoto" style="display: none;">
+            </div>
+            <div class="profile-name">
+                <h1 id="profileName">John Doe</h1>
+                <p id="profileUsername">@john_doe</p>
+                <button class="edit-profile-btn" onclick="toggleEditProfile()">Edit Profile</button>
+            </div>
+        </header>
+        <section class="profile-info">
+            <h2>About Me</h2>
+            <p class="bio" id="profileBio">Car enthusiast. Love to buy and sell cars. Passionate about classic cars and modern innovations in the automotive industry.</p>
+            <div class="profile-details">
+                <p><i class="fas fa-envelope"></i> <span id="profileEmail">john.doe@example.com</span></p>
+                <p><i class="fas fa-phone"></i> <span id="profilePhone">+123-456-7890</span></p>
+                <p><i class="fas fa-map-marker-alt"></i> <span id="profileLocation">New York, USA</span></p>
+            </div>
+        </section>
+        <section class="car-listings">
+            <h2>My Cars</h2>
+            <div class="car-item">
+                <img src="car1.jpg" alt="Car Image">
+                <div class="car-details">
+                    <h3>Nissan Altima</h3>
+                    <p>Price: $25,000</p>
+                </div>
+            </div>
+            <div class="car-item">
+                <img src="car2.jpg" alt="Car Image">
+                <div class="car-details">
+                    <h3>Honda Accord</h3>
+                    <p>Price: $30,000</p>
+                </div>
+            </div>
+            <!-- Add more car items as needed -->
+            <button class="add-car-btn" onclick="toggleAddCarForm()">Add New Car</button>
+            <div class="add-car-form" id="addCarForm" style="display: none;">
+                <input type="text" id="carName" placeholder="Car Name">
+                <input type="text" id="carPrice" placeholder="Car Price">
+                <input type="file" id="carImage">
+                <button onclick="addCar()">Add Car</button>
+            </div>
+        </section>
+        <section class="profile-social">
+            <h2>Follow Me</h2>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

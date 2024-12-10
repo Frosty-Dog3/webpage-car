@@ -1,0 +1,60 @@
+/* Add the existing CSS here */
+
+.edit-profile-btn {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.add-car-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-car-btn:hover {
+    background-color: #388E3C;
+}
+
+.add-car-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-car-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-car-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-car-form button:hover {
+    background-color: #388E3C;
+}

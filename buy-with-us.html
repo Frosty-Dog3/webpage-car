@@ -12,10 +12,9 @@
     <section class="banner" id="home">
         <div class="navbar">
             <a href="#home"><img src="img/logo.png" alt="Company Logo" class="logo logo-icon"></a>
-            <div class="menu-icon" onclick="toggleMenu()"> ☰
-            </div>
+            <div class="menu-icon" onclick="toggleMenu()"> ☰ </div>
             <ul id="nav-menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#about-us">About Us</a></li> 
                 <li><a href="#">Services</a></li> 
                 <li><a href="#">Special Offers</a></li> 
@@ -27,10 +26,178 @@
                 <input class="srch" type="search" name="" placeholder="Type to search">
                 <button class="btn" onclick="searchFunction()">Search</button>
             </div>
-        
         </div>
     </section>
 
-    <script src="script.js"></script>
+<!--      <section class="welcome-marquee">
+    <div class="marquee">
+        Welcome to our website! We are excited to have you here. Explore our collection of cars and enjoy seamless browsing. 🚗✨
+    </div>
+</section>
+
+ -->    <main>
+        <aside class="sidebar">
+            <h3>Search</h3>
+            <input type="text" placeholder="Eg.Nissan" class="sidebar-search">
+            <button class="sidebar-search-btn">Search</button>
+            <h3>Filter by Budget</h3>
+            <div class="budget-buttons">
+                <button onclick="filterByBudget('all')">All</button>
+                <button onclick="filterByBudget('0-500k')">0 - 500k</button>
+                <button onclick="filterByBudget('500k-1m')">500k - 1m</button>
+                <button onclick="filterByBudget('1m-2m')">1m - 2m</button>
+                <button onclick="filterByBudget('2m-3m')">2m - 3m</button>
+            </div>
+            <!-- Add more elements like filters, categories, etc. -->
+        </aside>
+        <section class="content">
+            <section class="car-cart-section">
+                <div class="car-cart-item" data-price="450000">
+                    <img src="car-cart-image/pexels-albert-7877442.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-mileage">1200</p>
+                    <p class="car-color"></p>
+                    <p class="car-make"></p>
+                    <p class="car-price">Price: 450,000</p>
+                    <p class="car-location">kiambu</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="750000">
+                    <img src="car-cart-image/pexels-mikebirdy-12170315.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 750,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="1250000">
+                    <img src="car-cart-image/pexels-flo-zimmermann-3188601-4809800.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 1,250,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="2750000">
+                    <img src="car-cart-image/pexels-lynxexotics-3849549.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 2,750,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="2750000">
+                    <img src="car-cart-image/pexels-mikebirdy-205740.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 2,750,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="2750000">
+                    <img src="car-cart-image/pexels-mikebirdy-116675.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 2,750,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="2750000">
+                    <img src="car-cart-image/pexels-mikebirdy-215528.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 2,750,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="2750000">
+                    <img src="car-cart-image/pexels-mikebirdy-100650.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 2,750,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="car-cart-item" data-price="2750000">
+                    <img src="car-cart-image/pexels-mikebirdy-892522.jpg" alt="Car Image" class="car-image">
+                    <h1 class="car-model">Nissan</h1>
+                    <p class="car-description">A well-maintained car</p>
+                    <p class="car-year">Year: 2022</p>
+                    <p class="car-price">Price: 2,750,000</p>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <!-- Repeat car-cart-item div for more cars -->
+            </section>
+        </section>
+        
+    </main>
+
+    <footer id="contact-us">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col" id="company">
+                    <img src="images/logo.png" alt="" class="logos">
+                    <p>We provide top-notch car services to ensure your vehicle stays in peak condition. Experience our quality service today.</p>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col" id="services">
+                    <h3>Services</h3>
+                    <div class="links">
+                        <a href="#">Oil Change</a>
+                        <a href="#">Brake Services</a>
+                        <a href="#">Tire Services</a>
+                        <a href="#">Battery Replacement</a>
+                    </div>
+                </div>
+
+                <div class="col" id="useful-links">
+                    <h3>Quick Links</h3>
+                    <div class="links">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="col" id="contact">
+                    <h3>Contact</h3>
+                    <div class="contact-details">
+                        <i class="fa fa-location"></i>
+                        <p>123 Car St, Auto City, <br> NY, USA</p>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa fa-phone"></i>
+                        <p>+1-234-567-890</p>
+                    </div>
+                    <div class="contact-details">
+                        <i class="fa fa-envelope"></i>
+                        <p>contact@carservices.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form">
+                    <form action="">
+                        <input type="email" placeholder="Enter your email for updates...">
+                        <button><i class="fa fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="buy-with-us.js"></script>
 </body>
 </html>
